@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:4326','+proj=longlat +datum=WGS84 +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/delta_tigre_2.js"></script><script src="layers/delta_tigre_3.js"></script><script src="layers/rios_OSM_4.js"></script><script src="layers/limites_5.js"></script><script src="layers/ItekoaProblemticaCelofn_6.js"></script><script src="layers/ConflictosItekoa_7.js"></script><script src="layers/Problemticas_Itekoa_8.js"></script><script src="layers/Entramados_Itekoa_9.js"></script><script src="layers/Conflictos_FI_10.js"></script><script src="layers/Problemticas_FI_11.js"></script><script src="layers/Entramados_FI_12.js"></script><script src="layers/Conflictos_FuerzaI_13.js"></script><script src="layers/Problemticas_FuerzaI_14.js"></script><script src="layers/Entramados_FuerzaI_15.js"></script><script src="layers/Problemticas_Pluri_16.js"></script>
+        <script src="styles/delta_tigre_2_style.js"></script><script src="styles/delta_tigre_3_style.js"></script><script src="styles/rios_OSM_4_style.js"></script><script src="styles/limites_5_style.js"></script><script src="styles/ItekoaProblemticaCelofn_6_style.js"></script><script src="styles/ConflictosItekoa_7_style.js"></script><script src="styles/Problemticas_Itekoa_8_style.js"></script><script src="styles/Entramados_Itekoa_9_style.js"></script><script src="styles/Conflictos_FI_10_style.js"></script><script src="styles/Problemticas_FI_11_style.js"></script><script src="styles/Entramados_FI_12_style.js"></script><script src="styles/Conflictos_FuerzaI_13_style.js"></script><script src="styles/Problemticas_FuerzaI_14_style.js"></script><script src="styles/Entramados_FuerzaI_15_style.js"></script><script src="styles/Problemticas_Pluri_16_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
